@@ -1,0 +1,231 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.nht.uit.orderdrink.product.view.CreateProductFragment">
+
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        android:layout_height="0dp"
+        android:layout_weight="10">
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.2"/>
+
+
+        //Spinner Category 1
+        <LinearLayout
+            android:background="@drawable/test_spinner_border"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="10"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+           <TextView
+               android:gravity="center"
+               android:textSize="20dp"
+               android:text="Trà Sữa"
+               android:id="@+id/txtCategory_editproduct"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent" />
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.2"/>
+        <LinearLayout
+
+            android:orientation="horizontal"
+            android:layout_weight="3"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="10dp">
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5">
+                <Button
+                    android:id="@+id/btnChooseimg_editproduct"
+                    android:textColor="@color/white"
+                    android:background="@drawable/bg_textlabel"
+                    android:text="Chọn hình"
+                    android:textSize="15sp"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </FrameLayout>
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.2"/>
+
+            <FrameLayout
+                android:layout_weight="3.5"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:id="@+id/product_editproduct"
+                    android:layout_gravity="center"
+                    android:src="@drawable/product_defaultimg"
+                    android:layout_width="150dp"
+                    android:scaleType="fitXY"
+                    android:layout_height="150dp" />
+            </FrameLayout>
+        </LinearLayout>
+
+
+
+        //1
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.2"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5"
+                android:background="@drawable/bg_textlabel"
+                android:gravity="center"
+                android:text="Tên sản phẩm"
+                android:textSize="15dp"
+                android:typeface="serif" />
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.2"/>
+            <EditText
+                android:id="@+id/edtProductName_editproduct"
+                android:hint="Product Name"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3.5"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="16dp"
+                android:background="@drawable/bg_textview"/>
+        </LinearLayout>
+
+        //3
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5"
+                android:background="@drawable/bg_textlabel"
+                android:gravity="center"
+                android:text="Mô tả"
+                android:textSize="15dp"
+                android:typeface="serif" />
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.2"/>
+            <EditText
+                android:id="@+id/edtDescribeProduct_editproduct"
+                android:layout_weight="3.5"
+                android:gravity="center"
+                android:textSize="15sp"
+                android:hint="Describe Product"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:ems="10"
+                android:inputType="textMultiLine"
+                android:background="@drawable/bg_textview"/>
+        </LinearLayout>
+        //1
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5"
+
+                android:background="@drawable/bg_textlabel"
+                android:gravity="center"
+                android:text="Giá"
+                android:textSize="15dp"
+                android:typeface="serif" />
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.2"/>
+            <EditText
+                android:id="@+id/edtPrice_editproduct"
+                android:inputType="number"
+                android:layout_weight="3.5"
+                android:hint="15.000 vnd  (Nhập 15000)"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="16dp"
+                android:background="@drawable/bg_textview"
+                />
+        </LinearLayout>
+
+        //1.5
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.4"/>
+        //1
+        <LinearLayout
+            android:weightSum="2"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+            <Button
+                android:id="@+id/btnEditProduct"
+                android:text="Chỉnh sửa"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/white"
+                android:background="@color/colorPrimaryDark"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+
+            <Button
+                android:id="@+id/btnDeleteProduct"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:background="@color/item_Active"
+                android:gravity="center"
+                android:text="Xóa"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.4"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

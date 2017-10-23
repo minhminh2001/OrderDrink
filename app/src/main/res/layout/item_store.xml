@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    app:cardElevation="5dp"
+    android:layout_height="wrap_content"
+    android:paddingRight="10dp"
+    android:paddingLeft="10dp"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    android:orientation="vertical">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+            //address 1
+            <android.support.v7.widget.CardView
+                app:cardCornerRadius="1dp"
+                app:cardElevation="1.3dp"
+                android:layout_width="match_parent"
+                android:layout_height="30dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="10">
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"
+                        android:src="@drawable/location" />
+                    <TextView
+                        android:id="@+id/txtAddress_itemstore"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="7"
+                        android:gravity="center_vertical"
+                        android:maxLines="1"
+                        android:text="Đông Hòa - Dĩ An - Bình Dương"
+                        android:textColor="@color/grey"
+                        android:textSize="12dp"
+                        android:typeface="serif" />
+                    <TextView
+                        android:id="@+id/txtDistanceFromUserToStore"
+                        android:maxLines="1"
+                        android:gravity="center"
+                        android:textSize="12dp"
+                        android:text="-----  km"
+                        android:layout_weight="2"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+            //info 3
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardView"
+                app:cardCornerRadius="1dp"
+                app:cardElevation="1dp"
+                android:layout_width="match_parent"
+                android:layout_height="90dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:weightSum="10">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:weightSum="10">
+                        <ImageView
+                            android:id="@+id/imgPhotoStore_itemStore"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="left"
+                            android:layout_marginLeft="20dp"
+                            android:layout_weight="2"
+                            android:src="@drawable/store" />
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="8"
+                            android:orientation="vertical"
+                            android:weightSum="3">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:paddingLeft="20dp">
+
+                                <TextView
+                                    android:id="@+id/txtStoreName_itemstore"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center_vertical|bottom"
+                                    android:text="Sky - Coffee"
+                                    android:textColor="@color/item_Active" />
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_marginLeft="25dp"
+                                android:layout_weight="2"
+                                android:orientation="vertical"
+                                android:paddingBottom="15dp"
+                                android:weightSum="2">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1">
+
+                                    <TextView
+                                        android:id="@+id/txtSumProduct"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:gravity="bottom"
+                                        android:maxLines="1"
+                                        android:text="Tổng cộng 121 sản phẩm"
+                                        android:textColor="@color/grey" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1">
+
+                                    <TextView
+                                        android:id="@+id/txtSumShipped"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:gravity="bottom"
+                                        android:maxLines="1"
+                                        android:text="Giao hàng thành công 98 lần"
+                                        android:textColor="@color/grey" />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+            //info 5
+            <LinearLayout
+                android:id="@+id/layoutInfo"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:orientation="vertical"
+                android:weightSum="10">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="10">
+                    //decorate 2
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="20dp"
+                        android:layout_weight="2">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/img_muiten" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="8"
+                        android:orientation="vertical"
+                        android:weightSum="5">
+                        //info
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="3"
+                            android:orientation="horizontal"
+                            android:weightSum="8">
+                            //icon 1
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                                android:weightSum="3">
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_margin="5dp"
+                                    android:layout_weight="1"
+                                    android:src="@drawable/time" />
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_margin="5dp"
+                                    android:layout_weight="1"
+                                    android:src="@drawable/email" />
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_margin="5dp"
+                                    android:layout_weight="1"
+                                    android:src="@drawable/door" />
+                            </LinearLayout>
+
+                            //name 2.5
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="2.5"
+                                android:orientation="vertical"
+                                android:weightSum="3">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:text="Time work " />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:text="Email" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:text="Status" />
+                            </LinearLayout>
+
+                            //value 4.5
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="4.5"
+                                android:orientation="vertical"
+                                android:weightSum="3">
+
+                                <TextView
+                                    android:id="@+id/txtTimeWork_itemstore"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:text="10h - 22h"
+                                    android:textColor="@color/grey"
+                                    android:typeface="serif" />
+
+                                <TextView
+                                    android:id="@+id/txtEmail_itemStore"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:text="sky@gmail.com"
+                                    android:textColor="@color/grey"
+                                    android:typeface="serif" />
+
+                                <TextView
+                                    android:id="@+id/txtStatus_itemStore"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:text="Mở cửa"
+                                    android:textColor="@color/grey"
+                                    android:typeface="serif" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        //button
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="2"
+                            android:orientation="horizontal"
+                            android:weightSum="5">
+
+                            <Button
+                                android:id="@+id/btnViewProfileStore"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_margin="15dp"
+                                android:layout_weight="2.3"
+                                android:text="profile"
+                                android:textSize="12dp"
+                                android:background="@color/colorPrimaryDark"
+                                android:textColor="@color/white" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.4" />
+
+                            <Button
+                                android:id="@+id/btnViewOrder"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_margin="15dp"
+                                android:layout_weight="2.3"
+                                android:text="view order"
+                                android:textSize="12dp"
+                                android:background="@color/colorPrimaryDark"
+                                android:textColor="@color/white" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            //heart and comment 1
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                app:cardCornerRadius="1dp"
+                app:cardElevation="5dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="10">
+                    //2
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="20dp"
+                        android:layout_weight="2"
+                        android:padding="5dp">
+
+                        <ImageView
+                            android:id="@+id/imgHeart"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/non_heart" />
+                    </LinearLayout>
+                    //2
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2">
+
+                        <TextView
+                            android:id="@+id/txtHeart"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:lines="1"
+                            android:text="0"
+                            android:textSize="12dp" />
+                    </LinearLayout>
+                    //1
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:padding="5dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/comment" />
+                    </LinearLayout>
+                    //2
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2">
+
+                        <TextView
+                            android:id="@+id/txtSumShipped_itemstore"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:lines="1"
+                            android:text="1906"
+                            android:textSize="12dp" />
+                    </LinearLayout>
+                    //3
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+    </LinearLayout>
+</LinearLayout>

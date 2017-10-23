@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    app:cardElevation="3dp"
+    app:cardCornerRadius="1dp"
+    android:layout_width="match_parent"
+    android:layout_height="100dp">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:weightSum="10"
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <FrameLayout
+            android:id="@+id/layoutAvataUser"
+            android:layout_weight="2.8"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" >
+            <ImageView
+                android:id="@+id/imgAvataShop_itemOrderHistory"
+                android:src="@drawable/avatar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <ImageView
+                android:id="@+id/imgStatusShipShop"
+                android:src="@drawable/imgshipped"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </FrameLayout>
+        <LinearLayout
+            android:id="@+id/layoutInforShop_itemOrderHistory"
+            android:orientation="vertical"
+            android:weightSum="4"
+            android:layout_weight="7.2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:paddingLeft="5dp"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+
+                <TextView
+                    android:id="@+id/userNameShopOrder"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="Store Name : "
+                    android:typeface="serif"
+                    android:textSize="13dp" />
+
+                <TextView
+                    android:id="@+id/txtUserShopName_itemOrderList"
+                    android:textColor="@color/grey"
+                    android:textSize="13dp"
+                    android:gravity="center"
+                    android:text="Kunpark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+            <LinearLayout
+                android:paddingLeft="5dp"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="Phone Number : "
+                    android:textColor="@color/black"
+                    android:textSize="13dp"
+                    android:typeface="serif" />
+
+                <TextView
+                    android:id="@+id/txtPhoneNumberShop_itemOrderList"
+                    android:textSize="13dp"
+                    android:gravity="center"
+                    android:text="01675225146"
+                    android:textColor="@color/grey"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+            <LinearLayout
+                android:paddingLeft="5dp"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+                <TextView
+                    android:id="@+id/txtProductName_itemOrderList"
+                    android:textColor="@color/black"
+                    android:text="Address : "
+                    android:typeface="serif"
+                    android:textSize="13dp"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+                <TextView
+                    android:id="@+id/txtAddressShop_itemOrderList"
+                    android:maxLines="1"
+                    android:textSize="13dp"
+                    android:textColor="@color/grey"
+                    android:gravity="center"
+                    android:text="Tân Lập - Dĩ An - Bình Dương"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+            <LinearLayout
+                android:paddingLeft="5dp"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+                <TextView
+                    android:text="Time Order : "
+                    android:textColor="@color/black"
+                    android:typeface="serif"
+                    android:textSize="13dp"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+                <TextView
+                    android:id="@+id/txtTimeOrderShop"
+                    android:text="11h:20p:24s 12/2/2017"
+                    android:textColor="@color/grey"
+                    android:textSize="13dp"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

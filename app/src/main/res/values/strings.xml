@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">OrderDrink</string>
+    <string name="title_activity_main_user">MainUserActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="facebook_app_id">295811534182766</string>
+
+    //list-permisstion
+    <string-array name="listpermisstion">
+        <item>email</item>
+        <item>public_profile</item>
+        <item>user_friends</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_create_category">CreateCategory</string>
+</resources>

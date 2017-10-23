@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="13.5"
+    android:padding="16dp"
+    android:background="@color/white">
+   <FrameLayout
+       android:id="@+id/layoutChangePhotoProduct_create"
+       android:paddingBottom="10dp"
+       android:layout_weight="6"
+       android:layout_width="match_parent"
+       android:layout_height="0dp">
+       <ImageView
+           android:id="@+id/imgProduct"
+           android:src="@drawable/product_default"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent" />
+       <ImageView
+           android:src="@drawable/imgeditphoto"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent" />
+   </FrameLayout>
+
+    <LinearLayout
+        android:background="@drawable/test_spinner_border"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:weightSum="10"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <Spinner
+            android:id="@+id/spinnerCategory"
+            android:background="@color/white"
+            android:gravity="center"
+            android:layout_margin="2dp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="9" />
+        <ImageView
+            android:src="@drawable/drop_dow_icon"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/edtProductName"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="4dp"
+        android:layout_weight="1"
+        android:background="@drawable/test_bg_edittext"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Tên sản phẩm"
+        android:inputType="textPersonName"
+        android:textColor="@color/black"
+        android:textColorHint="@color/grey"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/edtDescribeProduct"
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:textSize="15dp"
+        android:hint="Nhập mô tả cho sản phẩm"
+        android:background="@drawable/test_bg_edittext"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_weight="2"/>
+
+    <EditText
+        android:id="@+id/edtPrice"
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:ems="10"
+        android:inputType="number"
+        android:hint="30000 Vnd"
+        android:layout_weight="1"
+        android:textSize="15sp"
+        android:textColor="@color/black"
+        android:background="@drawable/test_bg_edittext"
+        android:gravity="center"
+        />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5" />
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+
+        >
+        <Button
+            android:id="@+id/btnCreateProduct"
+            android:text="Tạo sản phẩm"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/test_bg_btn"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:textColor="@color/white"/>
+    </android.support.v7.widget.CardView>
+
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5" />
+
+
+
+
+</LinearLayout>

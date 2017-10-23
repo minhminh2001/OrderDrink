@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "878499337110",
+    "firebase_url": "https://nht-orderdrinks.firebaseio.com",
+    "project_id": "nht-orderdrinks",
+    "storage_bucket": "nht-orderdrinks.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:878499337110:android:dff78f22d0c95612",
+        "android_client_info": {
+          "package_name": "com.nht.uit.orderdrink"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "878499337110-tc6o5tr7v1r2o3dso55mcv1b5eiud49s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCer8PwR9D5gEziyMao6DkPkRy0nOqic0Y"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
